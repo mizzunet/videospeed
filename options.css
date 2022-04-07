@@ -1,10 +1,45 @@
 body {
-  margin: 0;
+  --text: #fff;
+  --bg-main: #121212;
+  --bg-secondary: #202020;
+  --active: #fbc117;
+  --space: 5px;
+  --danger: #f04141;
+  --danger-light: #f9d0d5;
+  --dark-grey: #767676;
+  --light-grey: #c3c3c3;
+}
+
+body {
+  margin: auto;
   padding-left: 15px;
   padding-top: 53px;
-  font-family: sans-serif;
+  font-family: sans;
   font-size: 12px;
-  color: rgb(48, 57, 66);
+  background-color: var(--bg-main);
+  color: var(--text);
+  overflow-x: hidden
+}
+div.some-block input[type="checkbox"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+input[type="url"],
+input[type="text"],
+select {
+  font-weight: bold;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #767676;
+  color: var(--text);
+  font-size: 16px;
+  padding: 8px;
+  background-color: var(--bg-secondary);
+  border: none;
+  margin: 0;
+  width: 200px;
+  border-radius: 3px;
 }
 
 h1,
@@ -34,7 +69,7 @@ header {
   left: 15px;
   right: 0;
   border-bottom: 1px solid #eee;
-  background: linear-gradient(white, white 40%, rgba(255, 255, 255, 0.92));
+  background-color: var(--bg-main);
 }
 header,
 section {
@@ -71,9 +106,64 @@ button {
 
   user-select: none;
 }
+button {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: light;
+  margin: 5px 0px;
+  padding: 5px 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  background: var(--bg-secondary);
+  display: inline-flex;
+  align-items: center;
+  margin: 7.5px 0;
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button:hover {
+  color: var(--active);
+}
+button-inline {
+  display: inline-flex;
+  align-items: center;
+  margin: 7.5px 0;
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button.default {
+  margin-left: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 input[type="text"] {
   width: 75px;
+    background-color: var(--bg-secondary);
+
   text-align: center;
 }
 
@@ -109,4 +199,108 @@ select {
 .customKey {
   color: transparent;
   text-shadow: 0 0 0 #000000;
+}
+
+textarea {
+  font-weight: bold;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #767676;
+  color: var(--text);
+  font-size: 11px;
+  padding: 8px;
+  background-color: var(--bg-secondary);
+  border: none;
+  margin: 0;
+  width: 200px;
+  border-radius: 3px;
+}
+
+body {
+  --text: #fff;
+  --bg-main: #121212;
+  --bg-secondary: #202020;
+  --active: #fbc117;
+  --space: 5px;
+  --dark-grey: #767676;
+  --light-grey: #c3c3c3;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  font-family: 'Inter';
+  background-color: var(--bg-main);
+  color: var(--text);
+  overflow-x: hidden
+}
+
+input[type="text"],
+select {
+  font-weight: bold;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #767676;
+  color: var(--text);
+  font-size: 16px;
+  padding: 8px;
+  background-color: var(--bg-secondary);
+  border: none;
+  margin: 0;
+  width: 200px;
+  border-radius: 3px;
+}
+
+a {
+  color: var(--active);
+}
+
+textarea {
+  border: 0px;
+  background: var(--bg-secondary);
+}
+
+
+button {
+  text-align: center;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  background-color: var(--bg-secondary);
+  border: none;
+  margin: 7.5px 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button:hover {
+  color: var(--active);
+}
+
+
+button-inline {
+
+}
+
+button.default {
+  margin-left: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button.add {
+
 }
