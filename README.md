@@ -21,13 +21,13 @@ even better, simply use your keyboard:
 ### Usage
 
 ```
-S - decrease playback speed.
-D - increase playback speed.
-R - reset playback speed to 1.0x.
-Z - rewind video by 10 seconds.
-X - advance video by 10 seconds.
-G - toggle between current and user configurable preferred speed.
-V - show/hide the controller.
+S decrease playback speed.
+D increase playback speed.
+R reset playback speed to 1.0x.
+Z rewind video by 10 seconds.
+X advance video by 10 seconds.
+G toggle between current and user configurable preferred speed.
+V show/hide the controller.
 ```
 
 You can customize and reassign the default shortcut keys in the extensions
